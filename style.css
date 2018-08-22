@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+	font-family: 'Merriweather Sans', sans-serif;
+	height: 100%;
+}
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration: none;
+}
+body a:hover {
+	text-decoration: none;
+}
+body a:focus, a:hover {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing:1px;
+}
+p {
+	margin:0;
+}
+ul {
+	margin:0;
+	padding:0;
+}
+label {
+	margin:0;
+}
+a:focus, a:hover {
+	text-decoration: none;
+	outline: none
+}
+img {
+	width: 100%;
+}
+
+
+/*-- banner --*/
+.banner{
+	padding:95px 0px;
+	background:url(images/banner5.jpg) no-repeat;
+	background-size:cover;
+  height: 600px;
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/*-- about --*/
+.about{
+	padding:55px 0px;
+	text-align:center;
+}
+.about h3{
+	color:#000;
+	font-weight: 500;
+	font-size:36px;
+}
+label.line {
+    display: block;
+    background-color: #56b2e6;
+    width: 65px;
+    height: 3px;
+    margin: 12px auto;
+}
+.about img {
+    width: 10%;
+    min-width: 90px;
+    border-radius: 50%;
+	margin-top:35px;
+}
+.about p{
+	text-align:center;
+	font-size:14px;
+	color:#000;
+	line-height:27px;
+	width:60%;
+	margin:0 auto;
+	margin-top:20px;
+}
+.about p span{
+	font-size: 18px;
+}
+
+/*-- picture --*/
+.picture img {
+    width: 30%;
+    min-width: 90px;
+	  margin-top:35px;
+}
+
+/*--social media --*/
+.social{
+	position: absolute;
+ 	margin-left: 250px;
+	margin-top: 10px;
+	height: 64px;
+	width: 192px;
+}
+.social .facebook, .social .instagram, .social .github{
+	height: 55px;
+	width: 55px;
+	padding-left: 5px;
+	background-size: cover;
+	float: right;
+}
+
+/*-- responsive--*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.banner{
+		height: 100px;
+	}
+	.social{
+		width: 53%;
+		text-align: center;
+	}
+	.about h3{
+		font-size: 30px;
+	}
+	.social{
+		margin-left: 40px;
+	}
+	.social .facebook, .social .instagram, .social .github{
+		height: 32px;
+		width: 32px;
+	}
+	.c-w3l h4{
+		font-size:8px;
+	}
+	.c-w3l h4 a{
+		font-size:8px;
+	}
+	form{
+		margin: 12%;
+	}
+	input.name{
+		margin-left: -75px;
+	}
+}
